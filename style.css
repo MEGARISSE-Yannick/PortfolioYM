@@ -1,0 +1,494 @@
+  /*definition des couleurs  */
+  :root {
+    --color_1: #5984a5;
+    --color_2: #46A8A7;
+    --color_3: #FFB370;
+    --color_4: #2b2b2b;
+    --color_5: #bebebe;
+    --bg-color: #ffffff;
+  }
+
+  * {
+    z-index: 1;
+
+  }
+
+  body {
+    background: linear-gradient(90deg, var(--color_1) 0%, var(--color_2) 38%, var(--color_3) 100%);
+  }
+
+  #bg-aside {
+    z-index: 0;
+    top: 3vh;
+    position: absolute;
+    top: 100vh;
+    right: 8vh;
+  }
+
+  #bg-aside img {
+    position: absolute;
+  }
+
+  #logo {
+    transition: 5s;
+    border-radius: 100%;
+    height: 15vh;
+    width: 15vh;
+    background-color: var(--color_5);
+    left: 50%;
+    border: 0.2em solid var(--color_4);
+  }
+
+  /*mise en place des couleurs des icones fonts awesome*/
+  #html,
+  #css,
+  #js,
+  #hard,
+  #medium,
+  #easy {
+    line-height: 20px;
+    font-size: 20px;
+    transition: 2s;
+  }
+
+  #html {
+    color: #e34c26;
+
+  }
+
+  #css {
+    color: #264de4;
+  }
+
+  #js {
+    color: #f0db4f;
+  }
+
+  #hard {
+    color: red;
+
+  }
+
+  #medium {
+    color: orange;
+  }
+
+  #easy {
+    color: green;
+  }
+
+  * {
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  /*Parallax bg*/
+  #first,
+  #second,
+  #third {
+    /*background-image: url("docs/bg.svg");
+    background-attachment: fixed;*/
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #second span img {
+    height: 1.7em;
+    width: fit-content;
+
+    position: relative;
+  }
+
+  /*  Social menu bulle  d'info reseau + positionement aside   */
+
+  aside {
+    z-index: 999;
+    position: sticky;
+    position: absolute;
+    position: fixed;
+    top: 1em;
+    right: 2em;
+  }
+
+  .social-menu ul li {
+    list-style: none;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+
+
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color_2);
+    transition: 2s;
+    box-shadow: 0 2px 7px #3d3d3d;
+  }
+
+  .social-menu ul li .fa:hover {
+    color: var(--color_1);
+  }
+
+  .social-menu ul li a:hover {
+    transition: 1s;
+    top: .4em;
+  }
+
+  .social-menu ul li .fa {
+    line-height: 50px;
+    font-size: 40px;
+    transition: 2s;
+    color: var(--color_3);
+  }
+
+  /*  mise en place des  sections   */
+
+  section {
+    overflow: hidden;
+    height: auto;
+    padding: 2em;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  h1 {
+    padding: 1em;
+  }
+
+  h1,
+  h2 {
+    background: var(--color_4);
+    font-family: 'Chango', cursive;
+    border-radius: 11px;
+    font-size: 2em;
+    font-weight: 700;
+    box-shadow: 0 2px 7px #3d3d3d;
+    color: var(--color_1);
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .textl {
+    color: var(--color_1);
+    height: auto;
+  }
+
+
+  .textl p {
+    padding: 1em;
+
+    background-color: var(--color_4);
+    border-radius: 11px;
+    box-shadow: 0 2px 7px #3d3d3d;
+
+  }
+
+  strong {
+    width: auto;
+    color: var(--color_1);
+    font-weight: 150;
+    font-family: 'Chango', cursive;
+  }
+
+  /*align center pour les icones dificulte*/
+  .textl span {
+    margin: 1em;
+    padding: 1em;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--color_4);
+  }
+
+  span i {
+    padding: 0.5em;
+  }
+
+
+  button {
+    font-family: 'Chango', cursive;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: var(--color_3);
+    border: var(--color_2) 4px solid;
+    color: var(--color_1);
+    border-radius: 11px;
+    font-size: 1.3em;
+    font-weight: 900;
+    padding: 0.7em 1.3em 0.7em 1.3em;
+    box-shadow: 0 2px 7px #3d3d3d;
+
+  }
+
+  button a {
+    font-family: 'Chango', cursive;
+    color: var(--color_1);
+  }
+
+  .product-card {
+    border-radius: 25px;
+    background: var(--color_4);
+  }
+
+  .product-card {
+    width: 13em;
+    position: relative;
+    background: var(--color_4);
+    margin: 5em 2em 5em 2em;
+  }
+
+  .product-tumb {
+    background-color: var(--color_3);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  .product-tumb img {
+    max-width: 20vh;
+    max-height: 20vh;
+  }
+
+
+  .product-details {
+    margin: 20px;
+    color: var(--color_1);
+  }
+
+  .product-category a {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color_2);
+  }
+
+  .product-bottom-detail div:hover {
+    color: var(--color_3);
+  }
+
+  .product-info {
+    padding-top: .5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-info .fa-solid {
+    line-height: 20px;
+    font-size: 1;
+    transition: 2s;
+    color: var(--color_3);
+  }
+
+
+
+  /*  formulaire  */
+  .formulaire-grid {
+    font-family: 'Chango', cursive;
+    margin: 1em;
+    color: var(--color_1);
+
+  }
+
+  .formulaire-grid div:last-child {
+    border-radius: 15px;
+    background-color: var(--color_4);
+    box-shadow: 0 2px 7px #3d3d3d;
+  }
+
+  .formulaire {
+    border-radius: 15px;
+    background-color: var(--color_4);
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+
+  .formulaire label {
+    color: var(--color_2);
+    margin: 0.5em;
+    font-size: 1em;
+  }
+
+  .formulaire input,
+  .formulaire select,
+  .formulaire textarea {
+    border: var(--color_2) 4px solid;
+    color: var(--color_1);
+    border-radius: 15px;
+    align-items: center;
+    background-color: var(--color_3);
+    box-shadow: 0 2px 7px #3d3d3d;
+    padding: 7px;
+
+  }
+
+  form div>textarea {
+    resize: none;
+    height: 7em;
+  }
+
+  #legal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2em;
+    margin-top: 2em;
+  }
+
+  footer div a:visited {
+    color: var(--color_4);
+    text-decoration: none;
+  }
+
+
+  footer {
+    z-index: 2;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color_3);
+    text-align: center;
+  }
+
+  footer div a,
+  footer div p {
+    z-index: 2;
+
+    color: var(--color_1);
+    text-decoration: none;
+  }
+
+  #res a .fa {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 20px;
+    transition: 2s;
+    color: var(--color_1);
+    margin-top: .7em;
+  }
+
+
+  hr {
+    border: none;
+    background-color: var(--color_1);
+    width: .2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #second span label {
+      padding-top: .5em;
+    }
+
+    .formulaire {
+      margin-left: 10em;
+    }
+
+    .product-card {
+      width: fit-content;
+      position: relative;
+      background: var(--color_4);
+      margin: 5em 2em 5em 2em;
+    }
+
+    #logo {
+      height: 18vh;
+      width: 18vh;
+      position: absolute;
+      left: 0;
+      left: 4em;
+      top: 4em;
+    }
+
+    p {
+      max-width: 80%;
+      color: var(--color_5);
+      font-size: 1.2em;
+      margin: auto;
+      line-height: 1.2em;
+    }
+
+    #contact-p {
+      margin: 8em 2em 0 3em;
+
+    }
+
+    #about p {
+      margin-top: 3em;
+    }
+
+    div h2 {
+      background-color: var(--color_3);
+    }
+
+    .fond {
+      background-color: var(--color_4);
+      border-radius: 11px;
+    }
+
+    h1,
+    h2 {
+      border-radius: 11px;
+      box-shadow: none;
+      border: none;
+      margin: 0.5em;
+      padding: 0.5em;
+      font-size: 3.3em;
+      background-image: linear-gradient(85deg, var(--color_3), var(--color_1));
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+
+    .textl {
+      padding: 0 3em 0 2em;
+
+    }
+
+    .textl span {
+      margin: 1em;
+      padding: 1em;
+      border-radius: 11px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: var(--color_4);
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: row;
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+
+    }
+
+  }
